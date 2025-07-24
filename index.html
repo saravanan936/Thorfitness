@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TFS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Override Primary Color with Yellow -->
+    <style>
+        :root {
+            --bs-primary: #FFD700;
+        }
+
+        .text-primary {
+            color: #FFD700 !important;
+        }
+
+        .btn-primary {
+            background-color: #FFD700 !important;
+            border-color: #FFD700 !important;
+            color: #000 !important;
+        }
+
+        .btn-primary:hover {
+            background-color: #e6c200 !important;
+            border-color: #e6c200 !important;
+            color: #000 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <a href="https://wa.me/+919629579964" class="whatsapp-float" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat" /> WhatsApp
+      </a>
+
+      <style>
+      .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        left: 25px; /* moved from right to left */
+        z-index: 999;
+        cursor: pointer;
+        background-color: #25D366;
+        padding: 10px;
+        border-radius: 0%;
+        width: 150px;
+        color: azure;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+        color: azure;
+    }
+    .whatsapp-float img {
+        width: 40px;
+        height: 40px;
+    }
+    
+      </style>
+
+      <!-- Header Start -->
+<div class="container-fluid bg-dark px-0">
+    <div class="row gx-0">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-3 px-lg-5 position-relative">
+                
+                <!-- ✅ Logo for large screens -->
+                <a href="index.html" class="navbar-brand d-none d-lg-block me-3">
+                    <img src="./img/logo.png" alt="Thor Fitness Studio Logo" class="img-fluid" style="max-height: 80px;">
+                </a>
+
+                <!-- ✅ Logo for small screens -->
+                <a href="index.html" class="navbar-brand d-lg-none me-auto">
+                    <img src="./img/logo.png" alt="Thor Fitness Studio Logo" class="img-fluid" style="max-height: 60px;">
+                </a>
+
+                <!-- Toggler for mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Centered nav links -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+                    <div class="navbar-nav text-center">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                        <a href="shop.html" class="nav-item nav-link">Supplements</a>
+
+                        <!-- ✅ Contact Us for mobile -->
+                        <a href="contact.html" class="btn btn-primary py-2 px-4 mt-3 d-lg-none">Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- Contact Us button for large screens -->
+                <div class="position-absolute end-0 top-50 translate-middle-y pe-3 d-none d-lg-block">
+                    <a href="contact.html" class="btn btn-primary py-2 px-4">Contact Us</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase">Thor Fitness & Studio</h5>
+                            <h1 class="display-2 text-white text-uppercase mb-md-4">Build Your Body Strong With Gymster</h1>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase">Best Gym Center</h5>
+                            <h1 class="display-2 text-white text-uppercase mb-md-4">Grow Your Strength With Our Trainers</h1>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+  <!-- About Start -->
+<div class="container-fluid p-5">
+    <div class="row gx-5">
+        <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+            <div class="position-relative h-100">
+                <iframe class="position-absolute w-100 h-100 rounded"
+                    src="https://www.youtube.com/embed/u6VkDMTpX-E?si=Xr6OGpmgawIRwi0b"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                    style="object-fit: cover;">
+                </iframe>
+            </div>
+        </div>
+        <div class="col-lg-7">
+            <div class="mb-4">
+                <h5 class="text-warning text-uppercase">About Us</h5> <!-- Changed from text-primary to text-warning -->
+                <h1 class="display-3 text-uppercase mb-0">Welcome to Gym</h1>
+            </div>
+            <h4 class="text-body mb-4">Thor Fitness Studio is a prominent unisex gym located in Manapparai, Tamil Nadu. It is renowned for its premium facilities, experienced trainers, and spacious workout environment, making it one of the largest fitness centers in the area.</h4>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<!-- Bouncer Services Start -->
+<div class="container-fluid p-5 bg-light">
+    <div class="row align-items-center g-5">
+        <!-- Image -->
+        <div class="col-lg-6">
+            <img src="img/bouncers-security-guards.jpg" alt="Bouncer Services" class="img-fluid rounded shadow">
+        </div>
+
+        <!-- Content -->
+        <div class="col-lg-6">
+            <h5 class="text-primary text-uppercase">Security Services</h5>
+            <h1 class="display-5 text-uppercase mb-4">Bouncer Services by Thor Fitness Studio</h1>
+            <p class="mb-3">Thor Fitness Studio proudly offers trained bouncers for:</p>
+            <ul class="list-unstyled mb-4">
+                <li>✔ Local Events & Functions</li>
+                <li>✔ Professional & Corporate Functions</li>
+                <li>✔ Weddings, Receptions, and Public Gatherings</li>
+                <li>✔ Concerts and Night Events</li>
+            </ul>
+            <p class="mb-4">Our bouncers are physically fit, disciplined, and professionally trained in crowd management, VIP protection, and ensuring event safety. Whether it’s a small function or a large public gathering, our team brings reliability and confidence.</p>
+            <ul class="list-unstyled mb-4">
+                <li>🔹 Bookings available on request.</li>
+                <li>🔹 Contact Thor Fitness Studio for more details or availability.</li>
+            </ul>
+            <button class="btn btn-primary px-4 py-2 mt-3" data-bs-toggle="modal" data-bs-target="#bouncerBookingModal">
+                Book Now
+            </button>
+        </div>
+    </div>
+</div>
+<!-- Bouncer Services End -->
+
+<!-- Bootstrap 5 Bouncer Booking Modal Start -->
+<div class="modal fade" id="bouncerBookingModal" tabindex="-1" aria-labelledby="bouncerBookingLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="bouncerBookingLabel" style="color: antiquewhite;">Book a Bouncer</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="POST" action="bouncer-booking.php">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control bg-secondary border-0 text-light" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="event" class="form-label">Event Type</label>
+            <select class="form-select bg-secondary border-0 text-light" id="event" name="event" required>
+              <option value="">-- Select Event Type --</option>
+              <option value="Wedding">Wedding</option>
+              <option value="Corporate Function">Corporate Function</option>
+              <option value="Concert">Concert</option>
+              <option value="Private Event">Private Event</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Event Date</label>
+            <input type="date" class="form-control bg-secondary border-0 text-light" id="date" name="date" required>
+          </div>
+          <div class="mb-3">
+            <label for="contact" class="form-label">Contact Number</label>
+            <input type="tel" class="form-control bg-secondary border-0 text-light" id="contact" name="contact" pattern="[0-9]{10}" title="Enter a 10-digit number" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Bouncer Booking Modal End -->
+
+
+    <!-- Programe Start -->
+    <div class="container-fluid programe position-relative px-5 mt-5" style="margin-bottom: 135px;">
+        <div class="row g-5 gb-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="bg-light rounded text-center p-5">
+                    <i class="flaticon-six-pack display-1 text-primary"></i>
+                    <h3 class="text-uppercase my-4">Body Building</h3>
+                    <p>Build strength and sculpt your physique with our expert-guided bodybuilding programs. Designed to push your limits and deliver results</p>
+                    <!--<a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>-->
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="bg-light rounded text-center p-5">
+                    <i class="flaticon-barbell display-1 text-primary"></i>
+                    <h3 class="text-uppercase my-4">Weight Lefting</h3>
+                    <p>Enhance your power and performance through structured weight lifting routines tailored for all levels—from beginners to pros.</p>
+                    <!--<a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>-->
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="bg-light rounded text-center p-5">
+                    <i class="flaticon-bodybuilding display-1 text-primary"></i>
+                    <h3 class="text-uppercase my-4">Muscle Building</h3>
+                    <p>Increase muscle mass and definition with our focused muscle-building workouts, crafted for effective and lasting gains.</p>
+                    <!--<a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>-->
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-6 text-center">
+                <h2 class="text-uppercase text-light mb-4">"Level Up Your Fitness This Summer – Your Transformation Starts Now!"</h2>
+    
+  
+  <!-- Modal Structure -->
+  <div class="modal fade" id="membershipModal" tabindex="-1" aria-labelledby="membershipModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="membershipModalLabel">Join Gym Today</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Content box inside modal -->
+          <p>Start your fitness journey with us!</p>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="John Doe">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+            </div>
+        </div>
+    </div>
+    <!-- Programe Start -->
+
+
+    
+<!-- Team Start -->
+<div class="container-fluid p-5">
+    <div class="mb-5 text-center">
+        <h5 class="text-primary text-uppercase">The Team</h5>
+        <h1 class="display-3 text-uppercase mb-0">Expert Trainers</h1>
+    </div>
+    <div class="row g-5 justify-content-center">
+
+        <!-- Trainer 1: Jayaprakash -->
+        <div class="col-lg-4 col-md-6">
+            <div class="team-item position-relative">
+                <div class="position-relative overflow-hidden rounded">
+                    <img class="img-fluid w-100" src="img/ceo.png" alt="">
+                </div>
+                <div class="position-absolute start-0 bottom-0 w-100 rounded-bottom text-center p-4"
+                    style="background: rgba(34, 36, 41, .9);">
+                    <h5 class="text-uppercase text-light">Jayaprakash</h5>
+                    <button class="btn btn-sm btn-light mt-2" data-bs-toggle="modal" data-bs-target="#modal4">View Profile</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trainer 2: Justin Raja -->
+        <div class="col-lg-4 col-md-6">
+            <div class="team-item position-relative">
+                <div class="position-relative overflow-hidden rounded">
+                    <img class="img-fluid w-100" src="img/coach2.jpeg" alt="">
+                </div>
+                <div class="position-absolute start-0 bottom-0 w-100 rounded-bottom text-center p-4"
+                    style="background: rgba(34, 36, 41, .9);">
+                    <h5 class="text-uppercase text-light">Justin Raja</h5>
+                    <button class="btn btn-sm btn-light mt-2" data-bs-toggle="modal" data-bs-target="#modal2">View Profile</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trainer 3: Vasanth -->
+        <div class="col-lg-4 col-md-6">
+            <div class="team-item position-relative">
+                <div class="position-relative overflow-hidden rounded">
+                    <img class="img-fluid w-100" src="img/coach3.png" alt="">
+                </div>
+                <div class="position-absolute start-0 bottom-0 w-100 rounded-bottom text-center p-4"
+                    style="background: rgba(34, 36, 41, .9);">
+                    <h5 class="text-uppercase text-light">Vasanth</h5>
+                    <button class="btn btn-sm btn-light mt-2" data-bs-toggle="modal" data-bs-target="#modal3">View Profile</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Team End -->
+
+<style>
+.team-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.team-item img {
+    height: 350px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.team-item .position-absolute {
+    min-height: 130px;
+}
+
+@media (max-width: 767.98px) {
+    .team-item img {
+        height: 250px;
+    }
+
+    .team-item .position-absolute {
+        min-height: 110px;
+    }
+}
+</style>
+
+
+<!-- Modals -->
+
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title" id="modal1Label" style="color:bisque;">Powerlifting Champion & Coach at Thor Fitness Studio, Manapparai</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Thangapandian is a highly accomplished Powerlifting Champion in the 105 kg weight category, known for his dominance in the sport from 2017 to 2021. His remarkable track record includes winning Gold medals at every major level of competition:
+
+District Level – Gold
+
+Zonal Level – Gold
+
+State Level – Gold
+
+National Level – Gold
+
+Taking his success beyond national borders, Thangapandian earned 5th place at the International Powerlifting Competition held in Turkey, proudly representing India on the global stage.
+
+Beyond his own achievements, Thangapandian is a passionate coach and mentor. He has played a crucial role in empowering the next generation of athletes—particularly female powerlifters. Under his guidance, several women have gone on to win District Gold Medals in events conducted by the Tamil Nadu Powerlifting Association in Trichy.
+
+As a coach at Thor Fitness Studio, Thangapandian brings elite-level experience, technical expertise, and an inspiring commitment to building strength and confidence in every athlete he trains.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title" id="modal2Label" style="color:bisque;">Bodybuilding & Fitness Coach at Thor Fitness Studio, Manapparai</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Justin Raja is a dedicated Bodybuilding and Fitness Coach at Thor Fitness Studio, Manapparai. Known for his discipline and expertise, Justin has made a mark in the regional fitness circuit with several notable achievements.
+
+In 2024, he won the Gold Medal at the Trichy District Bodybuilding Championship, organized by the Trichy Bodybuilding Association. His excellence at the district level earned him a place on the state stage, where he secured 5th place in the Tamil Nadu State-Level Bodybuilding Competition, hosted by the Amateur Bodybuilding Association.
+
+Beyond his personal achievements, Justin Raja is deeply committed to shaping the next generation of athletes. Through personalized training programs and result-oriented coaching, he has helped transform many aspiring fitness enthusiasts into competitive bodybuilders. His tailored approach and focus on client success have earned him a strong reputation for delivering visible, effective results.
+
+Justin continues to inspire, mentor, and build a thriving community of fitness-minded individuals, upholding Thor Fitness Studio’s mission of promoting health, strength, and athletic excellence.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title" id="modal3Label" style="color:bisque;">Bodybuilding & Fitness Coach at Thor Fitness Studio, Manapparai</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Vasanth is a dedicated Bodybuilding and Fitness Coach at Thor Fitness Studio, Manapparai. With a strong background in strength training, conditioning, and competitive bodybuilding, Vasanth plays a key role in guiding clients toward their fitness goals through disciplined coaching and scientifically backed workout plans.
+
+Renowned for his structured training methods and motivational approach, Vasanth specializes in:
+
+Muscle building and body transformation
+
+Competition preparation for aspiring bodybuilders
+
+Functional training and fat-loss programs
+
+Personalized diet and workout planning
+
+Vasanth has helped numerous clients—ranging from beginners to advanced athletes—achieve significant transformations and improve their overall health and performance. His passion for fitness and commitment to excellence make him a vital part of the Thor Fitness coaching team.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title" id="modal4Label" style="color:bisque;">Founder of Thor Fitness Studio, Manapparai</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Jayaprakash is the visionary founder of Thor Fitness Studio, a leading fitness center located in Manapparai, Tamil Nadu. His academic journey began with a Bachelor of Engineering (B.E.) degree from J.J. College of Engineering and Technology (JJCET), Trichy, followed by an MBA from SRM University, Chennai. He further enhanced his credentials by completing a Post Graduate Diploma in Management (PGDM) in FinTech and Blockchain from IIM Indore, with a specialized focus on cryptocurrency and emerging financial technologies.
+
+Prior to entering the fitness industry, Jayaprakash worked in the banking sector. However, driven by a lifelong passion for fitness and sports, he made the bold decision to resign from his corporate job and pursue his dream. In 2023, he officially launched Thor Fitness Studio, which quickly became known for its cutting-edge facilities, expert training programs, and commitment to holistic wellness.
+
+His dedication to the fitness community is further evidenced by Thor Fitness Studio’s official affiliations with both the Amateur Bodybuilding Association and the Tamil Nadu Powerlifting Association. Recognized for his leadership and service, Jayaprakash has been appointed Joint Secretary in both organizations at the Trichy District level.
+
+More than just a gym owner, Jayaprakash is a passionate advocate for sports development and healthy living. Through Thor Fitness Studio, he actively promotes a fitness-first lifestyle and supports aspiring athletes, contributing to a healthier, more active community in and around Manapparai.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!-- Testimonial Start -->
+<div class="container-fluid p-0 my-5">
+    <div class="row g-0">
+        <div class="col-lg-6" style="min-height: 500px;">
+            <div class="position-relative h-100">
+                <img class="position-absolute w-100 h-100" src="img/test4.jpg" style="object-fit: cover;">
+            </div>
+        </div>
+        <div class="col-lg-6 bg-dark p-5">
+            <div class="mb-5">
+                <h5 class="text-primary text-uppercase">Testimonial</h5>
+                <h1 class="display-3 text-uppercase text-light mb-0">Our Client Say</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item">
+                    <p class="fs-4 fw-normal text-light mb-4"><i class="fa fa-quote-left text-primary me-3"></i>All equipments available here, neat and clean. Best place to exercise.</p>
+                    <h5 class="text-uppercase text-light ps-4">Azarudeen</h5>
+                </div>
+                <div class="testimonial-item">
+                    <p class="fs-4 fw-normal text-light mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Great place for 8th to 12th standard boys who are interested in fitness.</p>
+                    <h5 class="text-uppercase text-light ps-4">Mohammed Safi</h5>
+                </div>
+                <div class="testimonial-item">
+                    <p class="fs-4 fw-normal text-light mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Female trainer available. Good fee structure and fun workouts. Zumba classes also available.</p>
+                    <h5 class="text-uppercase text-light ps-4">Agnes Vinitha</h5>
+                </div>
+                <div class="testimonial-item">
+                    <p class="fs-4 fw-normal text-light mb-4"><i class="fa fa-quote-left text-primary me-3"></i>I started at 48kg and now gained 65kg. Best choice is Thor Fitness Studio compared to other gyms.</p>
+                    <h5 class="text-uppercase text-light ps-4">Dhinakaran</h5>
+                </div>
+                <div class="testimonial-item">
+                    <p class="fs-4 fw-normal text-light mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Really enjoyed it. Training part is good. Happy to enjoy Zumba with my girls... go for it!</p>
+                    <h5 class="text-uppercase text-light ps-4">Kaaviya</h5>
+                </div>
+                <div class="testimonial-item">
+                    <p class="fs-4 fw-normal text-light mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Best gym to gain weight, with proper training and good guidance.</p>
+                    <h5 class="text-uppercase text-light ps-4">Mohan</h5>
+                </div>
+                <div class="testimonial-item">
+                    <p class="fs-4 fw-normal text-light mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Good and calm trainers, training method is too good. Best suggestion for weight loss.</p>
+                    <h5 class="text-uppercase text-light ps-4">Paps Paps</h5>
+                </div>
+                <div class="testimonial-item">
+                    <p class="fs-4 fw-normal text-light mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Very happy to declare Thor Gym & Fitness is one of the finest gyms in our locality with good ambiance and warm-hearted trainers!</p>
+                    <h5 class="text-uppercase text-light ps-4">Raj Sekar</h5>
+                </div>
+                <div class="testimonial-item">
+                    <p class="fs-4 fw-normal text-light mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Conducting separate cardio batch for weight loss — gives a lot of chances.</p>
+                    <h5 class="text-uppercase text-light ps-4">Mohammed Riyas</h5>
+                </div>
+                <div class="testimonial-item">
+                    <p class="fs-4 fw-normal text-light mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Lost my weight in a healthy way. Now I lead a better lifestyle.</p>
+                    <h5 class="text-uppercase text-light ps-4">Bala Mani</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+<!-- Blog Start -->
+<div class="container-fluid p-5">
+    <div class="mb-5 text-center">
+        <h5 class="text-primary text-uppercase">Our Journey</h5>
+        <h1 class="display-3 text-uppercase mb-0">Latest Achievements</h1>
+    </div>
+    <div class="row g-5">
+        <!-- Achievement 1 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="blog-item">
+                <div class="position-relative overflow-hidden rounded-top">
+                    <img class="img-fluid" src="img/achivement1.jpeg" alt="">
+                </div>
+                <div class="bg-dark d-flex align-items-center justify-content-center rounded-bottom p-4">
+                    <button class="btn btn-primary py-3 px-5" data-bs-toggle="modal" data-bs-target="#achievementModal1">
+                        See More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Achievement 2 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="blog-item">
+                <div class="position-relative overflow-hidden rounded-top">
+                    <img class="img-fluid" src="img/achivement2.jpeg" alt="">
+                </div>
+                <div class="bg-dark d-flex align-items-center justify-content-center rounded-bottom p-4">
+                    <button class="btn btn-primary py-3 px-5" data-bs-toggle="modal" data-bs-target="#achievementModal2">
+                        See More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Achievement 3 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="blog-item">
+                <div class="position-relative overflow-hidden rounded-top">
+                    <img class="img-fluid" src="img/achivement3.jpeg" alt="">
+                </div>
+                <div class="bg-dark d-flex align-items-center justify-content-center rounded-bottom p-4">
+                    <button class="btn btn-primary py-3 px-5" data-bs-toggle="modal" data-bs-target="#achievementModal3">
+                        See More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+
+<!-- Achievement Modal 1 -->
+<div class="modal fade" id="achievementModal1" tabindex="-1" aria-labelledby="achievementModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="achievementModalLabel1" style="color:bisque;">MR. THOR 2K24 – A Landmark Event</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <p class="mt-3">
+On April 7th, 2024, Thor Fitness Studio proudly hosted the MR. THOR 2K24 bodybuilding competition at Manaparai Nalangadi, in association with TABBA (Tamil Nadu Amateur Body Building Association). The event witnessed an overwhelming response with over 100 bodybuilders competing, making it one of the largest bodybuilding events in the region.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Achievement Modal 2 -->
+<div class="modal fade" id="achievementModal2" tabindex="-1" aria-labelledby="achievementModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="achievementModalLabel2" style="color: bisque;">Women Powerlifters</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <p class="mt-3">3 Women Powerlifters trained at Thor secured District-Level Gold Medals, breaking barriers in strength sports for women.
+</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Achievement Modal 3 -->
+<div class="modal fade" id="achievementModal3" tabindex="-1" aria-labelledby="achievementModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="achievementModalLabel3" style="color: bisque;">Celebrity Training & Impact</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <p class="mt-3">Thor Fitness Studio has also trained local celebrities and influencers, continuing to spread awareness of fitness, discipline, and healthy living across diverse audiences.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Lightbox HTML -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+    </div>
+    
+   <!-- Footer Start -->
+<div class="container-fluid bg-dark text-secondary px-4 px-md-5 pt-5 mt-5">
+    <div class="row gx-5 gy-5">
+
+        <!-- Get In Touch -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+            <div class="d-flex mb-2">
+                <i class="bi bi-geo-alt text-primary me-2"></i>
+                <p class="mb-0">Manaparai</p>
+            </div>
+            <div class="d-flex mb-2">
+                <i class="bi bi-envelope-open text-primary me-2"></i>
+                <p class="mb-0">dks.thorfitnessstudio@gmail.com</p>
+            </div>
+            <div class="d-flex mb-2">
+                <i class="bi bi-telephone text-primary me-2"></i>
+                <p class="mb-0">+91 96295 79964</p>
+            </div>
+            <div class="d-flex mt-3">
+                <a class="btn btn-primary btn-square rounded-circle me-2" href="mailto:dks.thorfitnessstudio@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a class="btn btn-primary btn-square rounded-circle" href="https://www.instagram.com/thor_fitness_studio_mnp?igsh=MmJyDR1dDhxaWlz">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <h4 class="text-uppercase text-light mb-4">Quick Links</h4>
+            <div class="d-flex flex-column">
+                <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Trainers</a>
+                <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Orders</a>
+                <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div class="col-12 col-lg-4">
+            <h4 class="text-uppercase text-light mb-4">Find Us On Map</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=...your-map-embed-link..."
+                width="100%" height="200" frameborder="0"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+    </div>
+</div>
+<!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

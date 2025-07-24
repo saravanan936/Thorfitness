@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TFS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Override Primary Color with Yellow -->
+    <style>
+        :root {
+            --bs-primary: #FFD700;
+        }
+
+        .text-primary {
+            color: #FFD700 !important;
+        }
+
+        .btn-primary {
+            background-color: #FFD700 !important;
+            border-color: #FFD700 !important;
+            color: #000 !important;
+        }
+
+        .btn-primary:hover {
+            background-color: #e6c200 !important;
+            border-color: #e6c200 !important;
+            color: #000 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+
+    <a href="https://wa.me/+919629579964" class="whatsapp-float" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat" /> WhatsApp
+      </a>
+
+      <style>
+      .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        left: 25px; /* moved from right to left */
+        z-index: 999;
+        cursor: pointer;
+        background-color: #25D366;
+        padding: 10px;
+        border-radius: 0%;
+        width: 150px;
+        color: azure;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+        color: azure;
+    }
+    .whatsapp-float img {
+        width: 40px;
+        height: 40px;
+    }
+    
+      </style>
+
+      <!-- Header Start -->
+<div class="container-fluid bg-dark px-0">
+    <div class="row gx-0">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-3 px-lg-5 position-relative">
+                
+                <!-- ✅ Logo for large screens -->
+                <a href="index.html" class="navbar-brand d-none d-lg-block me-3">
+                    <img src="./img/logo.png" alt="Thor Fitness Studio Logo" class="img-fluid" style="max-height: 80px;">
+                </a>
+
+                <!-- ✅ Logo for small screens -->
+                <a href="index.html" class="navbar-brand d-lg-none me-auto">
+                    <img src="./img/logo.png" alt="Thor Fitness Studio Logo" class="img-fluid" style="max-height: 60px;">
+                </a>
+
+                <!-- Toggler for mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Centered nav links -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+                    <div class="navbar-nav text-center">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
+                        <a href="shop.html" class="nav-item nav-link">Supplements</a>
+
+                        <!-- ✅ Contact Us for mobile -->
+                        <a href="contact.html" class="btn btn-primary py-2 px-4 mt-3 d-lg-none">Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- Contact Us button for large screens -->
+                <div class="position-absolute end-0 top-50 translate-middle-y pe-3 d-none d-lg-block">
+                    <a href="contact.html" class="btn btn-primary py-2 px-4">Contact Us</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+     
+     <style>
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: 200px;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .gallery-item {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        animation: fadeInZoom 0.6s ease forwards;
+        opacity: 0;
+    }
+
+    .gallery-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        z-index: 2;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+
+    .gallery-caption {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+        color: #fff;
+        padding: 12px;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    /* Variable sizes */
+    .tall {
+        grid-row: span 2;
+    }
+
+    .wide {
+        grid-column: span 2;
+    }
+
+    /* Animation keyframes */
+    @keyframes fadeInZoom {
+        0% {
+            transform: scale(0.95);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    /* ✅ Responsive fix: Adjust column/row span on small screens */
+    @media (max-width: 768px) {
+        .gallery-item.wide,
+        .gallery-item.tall {
+            grid-column: span 1 !important;
+            grid-row: span 1 !important;
+        }
+    }
+</style>
+
+    
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="display-5 text-uppercase">Our Gallery</h1>
+        <p class="text-muted">Click the image to ZOOM it</p>
+    </div>
+    <div class="gallery-grid">
+       <div class="gallery-item wide">
+            <a href="./img/gallery (1).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (1).jpg" alt="Achievement 1">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (2).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (2).jpg" alt="Achievement 2">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (3).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (3).jpg" alt="Achievement 3">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (4).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (4).jpg" alt="Achievement 4">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (5).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (5).jpg" alt="Achievement 5">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (6).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (6).jpg" alt="Achievement 6">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (7).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (7).jpg" alt="Achievement 7">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (8).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (8).jpg" alt="Achievement 8">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (9).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (9).jpg" alt="Achievement 9">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (10).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (10).jpg" alt="Achievement 10">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (11).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (11).jpg" alt="Achievement 11">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (12).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (12).jpg" alt="Achievement 12">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (13).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (13).jpg" alt="Achievement 13">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (14).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (14).jpg" alt="Achievement 14">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (15).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (15).jpg" alt="Achievement 15">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (16).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (16).jpg" alt="Achievement 16">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (17).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (17).jpg" alt="Achievement 17">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (18).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (18).jpg" alt="Achievement 18">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (19).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (19).jpg" alt="Achievement 19">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (20).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (20).jpg" alt="Achievement 20">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (21).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (21).jpg" alt="Achievement 21">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (22).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (22).jpg" alt="Achievement 22">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (23).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (23).jpg" alt="Achievement 23">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (24).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (24).jpg" alt="Achievement 24">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (25).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (25).jpg" alt="Achievement 25">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (26).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (26).jpg" alt="Achievement 26">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (27).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (27).jpg" alt="Achievement 27">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (28).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (28).jpg" alt="Achievement 28">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (29).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (29).jpg" alt="Achievement 29">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (30).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (30).jpg" alt="Achievement 30">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (31).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (31).jpg" alt="Achievement 31">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (32).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (32).jpg" alt="Achievement 32">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (33).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (33).jpg" alt="Achievement 33">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (34).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (34).jpg" alt="Achievement 34">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (35).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (35).jpg" alt="Achievement 35">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (36).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (36).jpg" alt="Achievement 36">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (37).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (37).jpg" alt="Achievement 37">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (38).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (38).jpg" alt="Achievement 38">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (39).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (39).jpg" alt="Achievement 39">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (40).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (40).jpg" alt="Achievement 40">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (41).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (41).jpg" alt="Achievement 41">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (42).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (42).jpg" alt="Achievement 42">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (43).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (43).jpg" alt="Achievement 43">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (44).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (44).jpg" alt="Achievement 44">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (45).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (45).jpg" alt="Achievement 45">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (46).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (46).jpg" alt="Achievement 46">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (47).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (47).jpg" alt="Achievement 47">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (48).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (48).jpg" alt="Achievement 48">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (49).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (49).jpg" alt="Achievement 49">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (50).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (50).jpg" alt="Achievement 50">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (51).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (51).jpg" alt="Achievement 51">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (52).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (52).jpg" alt="Achievement 52">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (53).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (53).jpg" alt="Achievement 53">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (54).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (54).jpg" alt="Achievement 54">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (55).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (55).jpg" alt="Achievement 55">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (56).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (56).jpg" alt="Achievement 56">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (57).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (57).jpg" alt="Achievement 57">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (58).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (58).jpg" alt="Achievement 58">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (59).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (59).jpg" alt="Achievement 59">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (60).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (60).jpg" alt="Achievement 60">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (61).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (61).jpg" alt="Achievement 61">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (62).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (62).jpg" alt="Achievement 62">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (63).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (63).jpg" alt="Achievement 63">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (64).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (64).jpg" alt="Achievement 64">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (65).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (65).jpg" alt="Achievement 65">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (66).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (66).jpg" alt="Achievement 66">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (67).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (67).jpg" alt="Achievement 67">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (68).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (68).jpg" alt="Achievement 68">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (69).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (69).jpg" alt="Achievement 69">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (70).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (70).jpg" alt="Achievement 70">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (71).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (71).jpg" alt="Achievement 71">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (72).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (72).jpg" alt="Achievement 72">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (73).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (73).jpg" alt="Achievement 73">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (74).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (74).jpg" alt="Achievement 74">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (75).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (75).jpg" alt="Achievement 75">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (76).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (76).jpg" alt="Achievement 76">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (77).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (77).jpg" alt="Achievement 77">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (78).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (78).jpg" alt="Achievement 78">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (79).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (79).jpg" alt="Achievement 79">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (80).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (80).jpg" alt="Achievement 80">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (81).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (81).jpg" alt="Achievement 81">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (82).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (82).jpg" alt="Achievement 82">
+            </a>
+        </div>
+    
+        <!--<div class="gallery-item tall">
+            <a href="./img/gallery (83).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (83).jpg" alt="Achievement 83">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (84).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (84).jpg" alt="Achievement 84">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (85).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (85).jpg" alt="Achievement 85">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (86).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (86).jpg" alt="Achievement 86">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (87).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (87).jpg" alt="Achievement 87">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (88).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (88).jpg" alt="Achievement 88">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (89).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (89).jpg" alt="Achievement 89">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (90).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (90).jpg" alt="Achievement 90">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (91).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (91).jpg" alt="Achievement 91">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (92).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (92).jpg" alt="Achievement 92">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (93).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (93).jpg" alt="Achievement 93">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (94).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (94).jpg" alt="Achievement 94">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (95).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (95).jpg" alt="Achievement 95">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (96).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (96).jpg" alt="Achievement 96">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (97).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (97).jpg" alt="Achievement 97">
+            </a>
+        </div>
+    
+        <div class="gallery-item tall">
+            <a href="./img/gallery (98).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (98).jpg" alt="Achievement 98">
+            </a>
+        </div>
+    
+        <div class="gallery-item">
+            <a href="./img/gallery (99).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (99).jpg" alt="Achievement 99">
+            </a>
+        </div>
+    
+        <div class="gallery-item wide">
+            <a href="./img/gallery (100).jpg" class="lightbox-trigger">
+                <img src="./img/gallery (100).jpg" alt="Achievement 100">
+            </a>
+        </div>-->
+        
+    </div>
+    
+    <!-- Lightbox HTML -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+    </div>
+    
+  <!-- Footer Start -->
+<div class="container-fluid bg-dark text-secondary px-4 px-md-5 pt-5 mt-5">
+    <div class="row gx-5 gy-5">
+
+        <!-- Get In Touch -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+            <div class="d-flex mb-2">
+                <i class="bi bi-geo-alt text-primary me-2"></i>
+                <p class="mb-0">Manaparai</p>
+            </div>
+            <div class="d-flex mb-2">
+                <i class="bi bi-envelope-open text-primary me-2"></i>
+                <p class="mb-0">dks.thorfitnessstudio@gmail.com</p>
+            </div>
+            <div class="d-flex mb-2">
+                <i class="bi bi-telephone text-primary me-2"></i>
+                <p class="mb-0">+91 96295 79964</p>
+            </div>
+            <div class="d-flex mt-3">
+                <a class="btn btn-primary btn-square rounded-circle me-2" href="mailto:dks.thorfitnessstudio@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a class="btn btn-primary btn-square rounded-circle" href="https://www.instagram.com/thor_fitness_studio_mnp?igsh=MmJyDR1dDhxaWlz">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <h4 class="text-uppercase text-light mb-4">Quick Links</h4>
+            <div class="d-flex flex-column">
+                <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Trainers</a>
+                <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Orders</a>
+                <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div class="col-12 col-lg-4">
+            <h4 class="text-uppercase text-light mb-4">Find Us On Map</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=...your-map-embed-link..."
+                width="100%" height="200" frameborder="0"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+    </div>
+</div>
+<!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
+
+<style>
+    .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+</style>
+
+<script>
+document.querySelectorAll('.lightbox-trigger').forEach(item => {
+    item.addEventListener('click', function(e) {
+        e.preventDefault();
+        const imgSrc = this.getAttribute('href');
+        document.getElementById('lightbox-img').src = imgSrc;
+        document.getElementById('lightbox').style.display = 'flex';
+    });
+});
+
+document.querySelector('.lightbox-close').addEventListener('click', function() {
+    document.getElementById('lightbox').style.display = 'none';
+});
+</script>
+
+</html>
